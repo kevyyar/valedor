@@ -1,0 +1,43 @@
+/* .imageSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+.imageSlider {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.imageSlider > .innerImageSlider {
+  /* background-color: var(--200); */
+}
+
+.imageSlider > .innerImageSlider > .item {
+  /* min-height: 40rem; */
+  width: auto;
+  padding: 20px;
+}
+
+.imageSlider > .innerImageSlider > .item > img {
+  border-radius: 10px;
+  min-width: 30rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* media query for desktop version */
+@media (min-width: 768px) {
+  .imageSlider {
+    /* flex-basis: 100%; */
+    flex: 2;
+    /* width: 65%; */
+  }
+  .imageSlider > .innerImageSlider {
+    display: flex;
+  }
+  .imageSlider > .innerImageSlider > .item {
+    min-height: 30rem;
+    /* pointer-events: none; */
+  }
+}

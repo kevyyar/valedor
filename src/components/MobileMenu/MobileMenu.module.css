@@ -1,0 +1,52 @@
+.mobileMenu {
+  background-color: var(--50);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0%);
+  transition: transform 0.8s ease-in-out;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: var(--500);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+  color: var(--700);
+}
+
+.mobileMenu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--700);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.mobileMenu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.closeMenu {
+  color: var(--700);
+}
+
+.closeMenu svg:hover {
+  fill: var(--700);
+  cursor: pointer;
+}

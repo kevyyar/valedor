@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Light';
+  src: local('SainteColombeLight'),
+    url('./assets/fonts/SainteColombeLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Extra Light';
+  src: local('SainteColombe'),
+    url('./assets/fonts/SainteColombeExtraLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: local('SainteColombe'),
+    url('./assets/fonts/SainteColombe.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: local('SainteColombe'),
+    url('./assets/fonts/SainteColombeMedium.otf') format('opentype');
+}
+:root {
+  --50: #f4f5f7;
+  --100: #e8ecef;
+  --200: #c6cfd6;
+  --300: #a3b2be;
+  --400: #5f798d;
+  --500: #1a3f5c;
+  --600: #173953;
+  --700: #142f45;
+  --800: #102637;
+  --900: #0d1f2d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Regular', serif;
+  background-color: var(--200);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Regular', serif;
+}
+
+p {
+  font-family: 'PT Serif', serif; /* font-family: 'Regular', serif; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
